@@ -1,15 +1,12 @@
 import React from "react";
-import "./App.css"
-// import Products from "./components/Products/Products";
-// import Navbar from "./components/Navbar/Navbar";
-
-import { Products, Navbar } from "./components/index"
+import "./App.css";
+import { Products, Navbar } from "./components/index";
 
 export default function App() {
   return (
     <div>
-      <Navbar/>
-      <Products/>
+      <Navbar />
+      <Products />
     </div>
   );
 }
