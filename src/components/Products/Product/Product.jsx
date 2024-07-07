@@ -7,8 +7,8 @@ import {
   Typography,
   IconButton,
 } from "@mui/material";
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import "./style.css"
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import "./style.css";
 
 export default function index({ product }) {
   return (
@@ -24,7 +24,7 @@ export default function index({ product }) {
       </CardContent>
       <CardActions disableSpacing className="CardActions">
         <IconButton aria-label="Add to Cart">
-          <AddShoppingCartIcon/>
+          <AddShoppingCartIcon />
         </IconButton>
       </CardActions>
     </Card>

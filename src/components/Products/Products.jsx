@@ -3,15 +3,10 @@ import { Grid } from "@mui/material";
 import Product from "./Product/Product";
 
 const products = [
-  {
-    id: 1,
-    name: "SwiftClick X1",
-    price: "$19.99",
-    img: "../../assets/Products/Mouse (1).jpg",
-  },
-  { id: 2, name: "ProMouse 360", price: "$27.49", image: "" },
-  { id: 3, name: "GlideTech MX", price: "$34.99", image: "" },
-  { id: 4, name: "AeroMouse Ultra", price: "$21.95", image: "" },
+  { id: 1, name: "SwiftClick X1", price: "$19.99" },
+  { id: 2, name: "ProMouse 360", price: "$27.49" },
+  { id: 3, name: "GlideTech MX", price: "$34.99" },
+  { id: 4, name: "AeroMouse Ultra", price: "$21.95" },
 ];
 export default function Products() {
   return (
