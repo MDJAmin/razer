@@ -15,7 +15,7 @@ import "./style.css";
 export default function Navbar() {
   return (
     <>
-      <AppBar position="relative" style={{ background: '#000000' }}>
+      <AppBar position="relative" className="appbar" style={{ background: '#131313' }}>
         <Toolbar>
           <Typography variant="h6" className="title" color="inherit">
             <img src={razerLogo} alt="Razer" height="25px" className="image" />
