@@ -9,9 +9,9 @@ const products = [
     price: "$19.99",
     img: "../../assets/Products/Mouse (1).jpg",
   },
-  { id: 2, name: "ProMouse 360", price: "$27.49", img: "" },
-  { id: 3, name: "GlideTech MX", price: "$34.99", img: "" },
-  { id: 4, name: "AeroMouse Ultra", price: "$21.95", img: "" },
+  { id: 2, name: "ProMouse 360", price: "$27.49", image: "" },
+  { id: 3, name: "GlideTech MX", price: "$34.99", image: "" },
+  { id: 4, name: "AeroMouse Ultra", price: "$21.95", image: "" },
 ];
 export default function Products() {
   return (
