@@ -1,83 +1,70 @@
 .appBar {
-    box-shadow: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+@media (min-width: 600px) {
+  .appBar {
+    width: calc(100% - 0px);
+    margin-left: 0px;
   }
-  
-  @media (min-width: 600px) {
-    .appBar {
-      width: calc(100% - 0px);
-      margin-left: 0px;
-    }
-  }
-  
-  .title {
-    flex-grow: 1;
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-  }
-  
-  .image {
-    margin-right: 10px;
-  }
-  
+}
+.title {
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+.image {
+  margin-right: 10px;
+}
+.menuButton {
+  margin-right: 8px;
+}
+@media (min-width: 600px) {
   .menuButton {
-    margin-right: 8px;
+    display: none;
   }
-  
-  @media (min-width: 600px) {
-    .menuButton {
-      display: none;
-    }
-  }
-  
-  .grow {
-    flex-grow: 1;
-  }
-  
+}
+.grow {
+  flex-grow: 1;
+}
+.search {
+  position: relative;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: background-color 0.25s;
+  margin-right: 8px;
+  margin-left: 0;
+  width: 100%;
+}
+.search:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+@media (min-width: 600px) {
   .search {
-    position: relative;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.15);
-    transition: background-color 0.25s;
-    margin-right: 8px;
-    margin-left: 0;
-    width: 100%;
+    width: auto;
   }
-  
-  .search:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-  }
-  
-  @media (min-width: 600px) {
-    .search {
-      width: auto;
-    }
-  }
-  
-  .searchIcon {
-    padding: 0 16px;
-    height: 100%;
-    position: absolute;
-    pointer-events: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .inputRoot {
-    color: inherit;
-  }
-  
+}
+.searchIcon {
+  padding: 0 16px;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputRoot {
+  color: inherit;
+}
+.inputInput {
+  padding: 8px 8px 8px 0;
+  padding-left: calc(1em + 32px);
+  transition: width 0.3s;
+  width: 100%;
+}
+@media (min-width: 960px) {
   .inputInput {
-    padding: 8px 8px 8px 0;
-    padding-left: calc(1em + 32px);
-    transition: width 0.3s;
-    width: 100%;
+    width: 20ch;
   }
-  
-  @media (min-width: 960px) {
-    .inputInput {
-      width: 20ch;
-    }
-  }
+}
