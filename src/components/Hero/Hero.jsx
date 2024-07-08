@@ -2,16 +2,16 @@ import React from "react";
 import heroSection from "../../assets/Hero.png";
 import { Button } from "@mui/material";
 import "./style.css";
+import "../../assets/Green headphone herosection.png"
 
 export default function Hero() {
   return (
     <div>
 
       <div>
+        <img src="../" alt="" />
         <img className="Hero-img" src={heroSection} alt="Hero Section" />
-      </div>
-
-      <div className="Hero-items">
+        <div className="Hero-items">
         <div>
           <p>Personalized Items</p>
           <Button
@@ -53,6 +53,9 @@ export default function Hero() {
           </p>
         </div>
       </div>
+      </div>
+
+
     </div>
   );
 }
