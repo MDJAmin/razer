@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Typography, Button, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
-// import CartItem from './CartItem/CartItem';
 import "./style.css";
+import CartItem from "./Cartitem/Item";
 
 const Cart = ({ cart }) => {
   //   const handleEmptyCart = () => onEmptyCart();
@@ -10,11 +10,8 @@ const Cart = ({ cart }) => {
   const renderEmptyCart = () => (
     <Typography variant="subtitle1">
       You have no items in your shopping cart,
-      <Link className="link" to="/">
-        start adding some
-      </Link>
-      !
-    </Typography>
+      <Link className="link" to="/"></Link>!
+    </Typography> 
   );
 
   if (!cart.line_items) return "Loading...";
@@ -24,8 +21,8 @@ const Cart = ({ cart }) => {
       <Grid container spacing={3}>
         {cart.line_items.map((item) => (
           <Grid item xs={12} sm={4} key={item.id}>
-            <div>{item.name}</div>
-            {/* <CartItem item={lineItem} onUpdateCartQty={onUpdateCartQty} onRemoveFromCart={onRemoveFromCart} /> */}
+            <CartItem item={item} />
+            {/* <CartItem item={item} onUpdateCartQty={onUpdateCartQty} onRemoveFromCart={onRemoveFromCart} /> */}
           </Grid>
         ))}
       </Grid>
