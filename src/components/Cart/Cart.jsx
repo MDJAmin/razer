@@ -4,14 +4,19 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import CartItem from "./Cartitem/Item";
 
-const Cart = ({ cart }) => {
+const Cart = ({
+  cart,
+  handUpdateCartQty,
+  handleRemoveFromCart,
+  handleEmptyCart,
+}) => {
   //   const handleEmptyCart = () => onEmptyCart();
 
   const renderEmptyCart = () => (
     <Typography variant="subtitle1">
       You have no items in your shopping cart,
       <Link className="link" to="/"></Link>!
-    </Typography> 
+    </Typography>
   );
 
   if (!cart.line_items) return "Loading...";
@@ -21,8 +26,7 @@ const Cart = ({ cart }) => {
       <Grid container spacing={3}>
         {cart.line_items.map((item) => (
           <Grid item xs={12} sm={4} key={item.id}>
-            <CartItem item={item} />
-            {/* <CartItem item={item} onUpdateCartQty={onUpdateCartQty} onRemoveFromCart={onRemoveFromCart} /> */}
+            <CartItem item={item} onUpdateCartQty={handUpdateCartQty} onRemoveFromCart={handleRemoveFromCart}/>
           </Grid>
         ))}
       </Grid>
@@ -37,6 +41,7 @@ const Cart = ({ cart }) => {
             type="button"
             variant="contained"
             color="error"
+            onClick={handleEmptyCart}
           >
             Empty cart
           </Button>
