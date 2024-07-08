@@ -23,10 +23,10 @@ export default function index({ product, onAddToCart }) {
       />
       <CardContent>
         <div className="CardContent">
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="p" gutterBottom>
             {product.name}
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="p">
             {product.price.formatted_with_symbol}
           </Typography>
         </div>

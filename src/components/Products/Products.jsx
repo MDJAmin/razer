@@ -17,7 +17,7 @@ export default function Products({ products, onAddToCart }) {
       Customer Favorites !
       </div>
       <div className="toolbar" />
-      <Grid container justify="center" spacing={4}>
+      <Grid container justify="center" spacing={0}>
         {products.map((product) => (
           <Grid item key={product.id} sx={12} md={4} lg={3}>
             <Product product={product} onAddToCart={onAddToCart} />

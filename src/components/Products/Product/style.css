@@ -15,10 +15,13 @@
   justify-content: flex-end;
 }
 .cardContent {
-  display: flex;
-  justify-content: space-between;
+  display: block !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
 }
-
+.css-anmq6p-MuiTypography-root{
+  display: block;
+}
 .css-16cvb1l-MuiCardMedia-root {
   border-radius: 10px;
   height: 350px !important;
