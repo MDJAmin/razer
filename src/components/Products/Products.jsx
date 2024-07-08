@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import Product from "./Product/Product";
-import "./style.css"
+import "./style.css";
 
 // const products = [
 //   { id: 1, name: "SwiftClick X1", price: "$19.99" },
@@ -10,14 +10,14 @@ import "./style.css"
 //   { id: 4, name: "AeroMouse Ultra", price: "$21.95" },
 // ];
 
-export default function Products({products}) {
+export default function Products({ products, onAddToCart }) {
   return (
     <main className="content">
-      <div className="toolbar"/>
+      <div className="toolbar" />
       <Grid container justifyContent={"center"} spacing={4}>
         {products.map((product) => (
           <Grid item key={product.id} sx={12} md={4} lg={3}>
-            <Product product={product} />
+            <Product product={product} onAddToCart={onAddToCart} />
           </Grid>
         ))}
       </Grid>
