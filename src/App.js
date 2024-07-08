@@ -55,7 +55,7 @@ export default function App() {
   return (
     <div>
       <Navbar totalItems={cart.total_items ?? 0} />
-      <Products products={products} onAddToCart={handleAddToCart} />
+      {/* <Products products={products} onAddToCart={handleAddToCart} /> */}
       <Cart cart={cart} />
     </div>
   );

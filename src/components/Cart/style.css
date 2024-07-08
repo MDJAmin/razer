@@ -37,4 +37,7 @@
     width: 100%;
     justify-content: space-between;
   }
-  
+  .btnItems{
+    display: flex;
+  gap: 20px;
+  }
