@@ -10,17 +10,18 @@ import {
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import "./style.css";
 
+
 export default function index({ product, onAddToCart }) {
   // console.log(product);
   // return <div>teast</div>
 
   return (
     <Card className="root">
-      <CardMedia 
-        className="media"
-        image={product.image.url}
-        title={product.name}
-      />
+        <CardMedia
+          className="media"
+          image={product.image.url}
+          // title={product.name}
+        />
       <CardContent>
         <div className="CardContent">
           <Typography variant="p" gutterBottom>

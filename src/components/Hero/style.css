@@ -2,15 +2,23 @@ img.Hero-img {
   width: 100%;
   padding: 20px 100px;
   position: relative;
+  user-select: none;
 }
+/* .greenhead{
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  width: 741px;
+  right: 18.9%;
+} */
 .Hero-items {
   display: flex;
   justify-content: space-between;
 }
-.Description-section{
+/* .Description-section{
     position: absolute;
     z-index: 1;
-    bottom: 26.5%;
+    bottom: 26%;
     right: 7%;
 }
 .Description {
@@ -25,4 +33,17 @@ img.Hero-img {
   color: #565a60 !important;
   opacity: 0.5;
   font-size: 0.7em;
+} */
+/* .my-atropos {
+  width: 320px;
+  height: 160px;
+
+} */
+.hero-sec{
+  position: relative;
+}
+.shopBtn{
+  position: absolute !important;
+  bottom: 90px;
+  left: 10%;
 }

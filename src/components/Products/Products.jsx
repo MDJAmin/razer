@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@mui/material";
 import Product from "./Product/Product";
 import "./style.css";
-
+import Atropos from "atropos/react";
 // const products = [
 //   { id: 1, name: "SwiftClick X1", price: "$19.99" },
 //   { id: 2, name: "ProMouse 360", price: "$27.49" },
@@ -12,6 +12,7 @@ import "./style.css";
 
 export default function Products({ products, onAddToCart }) {
   return (
+    <Atropos className="my-atropos">
     <main className="content">
       <div>
       Customer Favorites !
@@ -25,5 +26,6 @@ export default function Products({ products, onAddToCart }) {
         ))}
       </Grid>
     </main>
+    </Atropos>
   );
 }
