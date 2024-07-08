@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import { commerce } from "./assets/lib/commerce";
-import { Products, Navbar } from "./components/index";
+import { Products, Navbar, Cart } from "./components/index";
+
 
 export default function App() {
   const [products, setProducts] = useState([]);
@@ -30,12 +31,17 @@ export default function App() {
   const handleAddToCart = async (productId, quantity) => {
     try {
       const item = await commerce.cart.add(productId, quantity);
-      setCart(item.cart);
+      if (item && item.cart) {
+        setCart(item.cart);
+      } else {
+        throw new Error("Failed to add item to cart");
+      }
     } catch (error) {
+      console.error("Error adding item to cart:", error);
       setError("Failed to add item to cart");
     }
   };
-
+  
   useEffect(() => {
     setLoading(true);
     fetchProducts();
@@ -48,8 +54,9 @@ export default function App() {
 
   return (
     <div>
-      <Navbar totalItems={cart.total_items} />
+      <Navbar totalItems={cart.total_items ?? 0} />
       <Products products={products} onAddToCart={handleAddToCart} />
+      <Cart cart={cart} />
     </div>
   );
 }

@@ -14,7 +14,7 @@ export default function Products({ products, onAddToCart }) {
   return (
     <main className="content">
       <div className="toolbar" />
-      <Grid container justifyContent={"center"} spacing={4}>
+      <Grid container justify="center" spacing={4}>
         {products.map((product) => (
           <Grid item key={product.id} sx={12} md={4} lg={3}>
             <Product product={product} onAddToCart={onAddToCart} />

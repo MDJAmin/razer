@@ -4,15 +4,13 @@ import {
   Toolbar,
   IconButton,
   Badge,
-  // MenuItem,
-  // Menu,
   Typography,
 } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import razerLogo from "../../assets/razer-1.svg";
 import "./style.css";
 
-export default function Navbar({ totalItems }) {
+export default function Navbar({ totalItems = 0 }) {
   return (
     <>
       <AppBar
