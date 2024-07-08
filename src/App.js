@@ -80,7 +80,17 @@ export default function App() {
               <Products products={products} onAddToCart={handleAddToCart} />
             }
           />
-          <Route path="/cart" element={<Cart cart={cart} />} />
+          <Route
+            path="/cart"
+            element={
+              <Cart
+                cart={cart}
+                handUpdateCartQty={handUpdateCartQty}
+                handleRemoveFromCart={handleRemoveFromCart}
+                handleEmptyCart={handleEmptyCart}
+              />
+            }
+          />
         </Routes>
       </div>
     </Router>
