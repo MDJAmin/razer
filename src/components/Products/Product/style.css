@@ -1,3 +1,6 @@
+*{
+  color: #DCDCDC !important;
+}
 .root {
   max-width: 100%;
 
@@ -18,10 +21,14 @@
 
 .css-16cvb1l-MuiCardMedia-root {
   border-radius: 10px;
-  height: 170px;
+  height: 350px !important;
+  width: 350px !important;
 }
 .css-bhp9pd-MuiPaper-root-MuiCard-root {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.87);
-
+  background-color: #131313 !important;
+  box-shadow: none !important;
+}
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root{
+  position: absolute;
+  bottom: 20px;
 }

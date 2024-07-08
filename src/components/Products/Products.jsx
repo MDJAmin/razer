@@ -13,6 +13,9 @@ import "./style.css";
 export default function Products({ products, onAddToCart }) {
   return (
     <main className="content">
+      <div>
+      Customer Favorites !
+      </div>
       <div className="toolbar" />
       <Grid container justify="center" spacing={4}>
         {products.map((product) => (
