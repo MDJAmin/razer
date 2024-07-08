@@ -14,7 +14,7 @@ export default function Products({ products, onAddToCart }) {
   return (
     <Atropos className="my-atropos">
     <main className="content">
-      <div>
+      <div className="Title">
       Customer Favorites !
       </div>
       <div className="toolbar" />

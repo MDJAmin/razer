@@ -1,8 +1,9 @@
 img.Hero-img {
   width: 100%;
-  padding: 20px 100px;
+  padding: 20px 80px;
   position: relative;
   user-select: none;
+  margin-top: 30px;
 }
 /* .greenhead{
   position: absolute;
@@ -45,5 +46,12 @@ img.Hero-img {
 .shopBtn{
   position: absolute !important;
   bottom: 90px;
-  left: 10%;
+  left: 8%;
+  font-size: 1.2em !important;
+}
+@media only screen and (max-width: 1300px) {
+  .btn-sec{
+    display: none !important;
+    opacity: 0 !important;
+  }
 }

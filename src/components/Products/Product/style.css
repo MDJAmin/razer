@@ -8,6 +8,7 @@
 .media {
   height: 0;
   padding-top: 56.25%;
+  cursor: pointer;
 
 }
 .cardActions {
@@ -33,5 +34,5 @@
 }
 .css-78trlr-MuiButtonBase-root-MuiIconButton-root{
   position: absolute;
-  bottom: 20px;
+  bottom: 145px;
 }

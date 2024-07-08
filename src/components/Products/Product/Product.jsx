@@ -21,6 +21,7 @@ export default function index({ product, onAddToCart }) {
           className="media"
           image={product.image.url}
           // title={product.name}
+          onClick={() => onAddToCart(product.id, 1)}
         />
       <CardContent>
         <div className="CardContent">
@@ -36,7 +37,7 @@ export default function index({ product, onAddToCart }) {
         <IconButton
           aria-label="Add to Cart"
           onClick={() => onAddToCart(product.id, 1)}
-        >
+        > 
           <AddShoppingCartIcon />
         </IconButton>
       </CardActions>

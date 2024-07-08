@@ -2,8 +2,8 @@ import React from "react";
 import heroSection from "../../assets/Hero.png";
 import { Button } from "@mui/material";
 import "./style.css";
-import greenHeadphone from "../../assets/Green headphone.png";
-import Atropos from "atropos/react";
+// import greenHeadphone from "../../assets/Green headphone.png";
+// import Atropos from "atropos/react";
 
 export default function Hero() {
   return (
@@ -14,9 +14,9 @@ export default function Hero() {
             <img className="greenhead" src={greenHeadphone} alt="" />
           </div>
         </Atropos> */}
-        <Atropos className="my-atropos" shadow={false}>
+
         <img className="Hero-img" src={heroSection} alt="Hero Section" />
-        </Atropos>
+
         <div className="Hero-items">
           <div className="btn-sec">
             {/* <p>Personalized Items</p> */}
