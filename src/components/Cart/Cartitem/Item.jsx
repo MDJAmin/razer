@@ -17,8 +17,8 @@ export default function Item({ item, onUpdateCartQty, onRemoveFromCart }) {
     <Card className="cart-item">
       <CardMedia image={item.image.url} alt={item.name} className="media" />
       <CardContent className="cardContent">
-        <Typography variant="h4">{item.name}</Typography>
-        <Typography variant="h5">
+        <Typography variant="p">{item.name}</Typography>
+        <Typography variant="p">
           {item.line_total.formatted_with_symbol}
         </Typography>
       </CardContent>

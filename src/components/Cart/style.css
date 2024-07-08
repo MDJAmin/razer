@@ -1,10 +1,9 @@
-/* Toolbar styles are generally provided by Material-UI, ensure to add toolbar related styles here if needed */
-.toolbar {
-    /* Add necessary styles or leave empty if you are relying on Material-UI */
-  }
-  
-  .title {
+*{
+
+}
+.title {
     margin-top: 5%;
+    font-size: 3em;
   }
   
   .emptyButton {

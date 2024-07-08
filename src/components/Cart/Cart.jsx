@@ -13,8 +13,8 @@ const Cart = ({
   //   const handleEmptyCart = () => onEmptyCart();
 
   const renderEmptyCart = () => (
-    <Typography variant="subtitle1">
-      You have no items in your shopping cart,
+    <Typography variant="p">
+      You have no items in your shopping cart
       <Link className="link" to="/"></Link>!
     </Typography>
   );
@@ -31,7 +31,7 @@ const Cart = ({
         ))}
       </Grid>
       <div className="cardDetails">
-        <Typography variant="h4">
+        <Typography variant="p">
           Subtotal: {cart.subtotal.formatted_with_symbol}
         </Typography>
         <div className="btnItems">
@@ -62,9 +62,6 @@ const Cart = ({
   return (
     <Container>
       <div className="toolbar" />
-      <Typography className="title" variant="h3" gutterBottom>
-        Your Shopping Cart
-      </Typography>
       {!cart.line_items.length ? renderEmptyCart() : renderCart()}
     </Container>
   );
