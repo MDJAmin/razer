@@ -1,0 +1,21 @@
+img.Hero-img {
+  width: 100%;
+  padding: 20px 100px;
+}
+.Hero-items {
+  display: flex;
+  justify-content: space-between;
+}
+.Description-section
+.Description {
+  padding-bottom: 10px;
+  color: #565a60;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+.Description-p {
+  width: 300px;
+  color: #565a60;
+  opacity: 0.5;
+  font-size: 0.6em;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import { commerce } from "./assets/lib/commerce";
-import { Products, Navbar, Cart, Footer } from "./components/index";
+import { Products, Navbar, Cart, Footer, Hero } from "./components/index";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 export default function App() {
@@ -77,7 +77,10 @@ export default function App() {
           <Route
             path="/"
             element={
-              <Products products={products} onAddToCart={handleAddToCart} />
+              <>
+                <Hero />
+                <Products products={products} onAddToCart={handleAddToCart} />
+              </>
             }
           />
           <Route
