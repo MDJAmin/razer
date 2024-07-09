@@ -1,4 +1,4 @@
-div.Offer-section {
+/* div.Offer-section {
   display: flex;
   position: relative;
 }
@@ -7,24 +7,39 @@ img.bg-image {
   overflow: hidden;
   margin-left: 20%;
 }
-.card-items-offers {
-  position: absolute;
-  top: 50%;
-
+.swiper-slide{
+  overflow-y: hidden !important;
+  height: 200px !important;
+} */
+.firstEl{
+  margin-top: 10px;
 }
-.card-items-description {
-  position: absolute;
+body {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  top: 32%;
-  right: 18%;
-  width: 24%;
-
+  justify-content: center;
+  align-items: center;
 }
 
-.card-items-description p{
-font-size: 1.1em;
-opacity: 0.9;
-color: #ffffff !important;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
