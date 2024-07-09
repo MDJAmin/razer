@@ -3,6 +3,7 @@ import "./App.css";
 import { commerce } from "./assets/lib/commerce";
 import { Products, Navbar, Cart, Footer, Hero } from "./components/index";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Offers from "./components/Offers/Offers";
 
 export default function App() {
   const [products, setProducts] = useState([]);
@@ -37,7 +38,7 @@ export default function App() {
         throw new Error("Failed to add item to cart");
       }
     } catch (error) {
-      console.error("Error adding item to cart:", error);
+      console.log("Error adding item to cart:", error);
       setError("Failed to add item to cart");
     }
   };
@@ -80,6 +81,7 @@ export default function App() {
               <>
                 <Hero />
                 <Products products={products} onAddToCart={handleAddToCart} />
+                <Offers/>
               </>
             }
           />

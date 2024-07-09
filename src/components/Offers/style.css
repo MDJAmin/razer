@@ -1,0 +1,30 @@
+div.Offer-section {
+  display: flex;
+  position: relative;
+}
+img.bg-image {
+  display: flex;
+  overflow: hidden;
+  margin-left: 20%;
+}
+.card-items-offers {
+  position: absolute;
+  top: 50%;
+
+}
+.card-items-description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  top: 32%;
+  right: 18%;
+  width: 24%;
+
+}
+
+.card-items-description p{
+font-size: 1.1em;
+opacity: 0.9;
+color: #ffffff !important;
+}
