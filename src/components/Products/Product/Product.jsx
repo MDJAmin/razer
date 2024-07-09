@@ -17,6 +17,7 @@ export default function index({ product, onAddToCart }) {
 
   return (
     <Card className="root">
+
         <CardMedia
           className="media"
           image={product.image.url}
