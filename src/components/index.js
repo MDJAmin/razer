@@ -3,4 +3,3 @@ export { default as Hero } from "../components/Hero/Hero"
 export { default as Products } from "./Products/Products";
 export { default as Cart } from "./Cart/Cart"
 export { default as Footer } from "./Footer/Footer"
-// export { default as YouTubeIcon } from "@mui/icons-material/YouTube"
