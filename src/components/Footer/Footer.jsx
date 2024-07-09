@@ -7,9 +7,13 @@ import "./style.css";
 export default function Footer() {
   return (
     <div className="footer">
-      <div>Razor | All Rights Reserved</div>
+      <p className="footer-dis">Razor | All Rights Reserved</p>
       <div>
-        <YouTubeIcon/> <InstagramIcon /> <XIcon />
+        <YouTubeIcon />
+
+        <InstagramIcon />
+
+        <XIcon />
       </div>
     </div>
   );
