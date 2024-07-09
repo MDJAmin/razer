@@ -53,6 +53,7 @@ const Cart = ({
             type="button"
             variant="contained"
             color="success"
+            disabled
           >
             Checkout
           </Button>

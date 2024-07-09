@@ -34,8 +34,8 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="firstEl">
-            <a href="https://www.razer.com/eu-en/gaming-headsets/Razer-Kraken-Kitty-V2/RZ04-04730200-R3M1">
+          <div className="">
+            <a href="https://github.com/MDJAmin/razer.git">
               {" "}
               <img src={Offers} alt="" />
             </a>
@@ -44,7 +44,7 @@ export default function App() {
         <SwiperSlide>
           {" "}
           <div>
-            <a href="https://www.razer.com/eu-en/gaming-headsets/Razer-Kraken-Kitty-V2/RZ04-04730200-R3M1">
+            <a href="https://github.com/MDJAmin/razer.git">
               {" "}
               <img src={Offers1} alt="" />
             </a>
@@ -53,7 +53,7 @@ export default function App() {
         <SwiperSlide>
           {" "}
           <div>
-            <a href="https://www.razer.com/eu-en/gaming-headsets/Razer-Kraken-Kitty-V2/RZ04-04730200-R3M1">
+            <a href="https://github.com/MDJAmin/razer.git">
               {" "}
               <img src={Offers2} alt="" />
             </a>
@@ -62,7 +62,7 @@ export default function App() {
         <SwiperSlide>
           {" "}
           <div>
-            <a href="https://www.razer.com/eu-en/gaming-headsets/Razer-Kraken-Kitty-V2/RZ04-04730200-R3M1">
+            <a href="https://github.com/MDJAmin/razer.git">
               {" "}
               <img src={Offers3} alt="" />
             </a>
@@ -71,7 +71,7 @@ export default function App() {
         <SwiperSlide>
           {" "}
           <div>
-            <a href="https://www.razer.com/eu-en/gaming-headsets/Razer-Kraken-Kitty-V2/RZ04-04730200-R3M1">
+            <a href="https://github.com/MDJAmin/razer.git">
               {" "}
               <img src={Offers4} alt="" />
             </a>
