@@ -5,41 +5,10 @@ img.Hero-img {
   user-select: none;
   margin-top: 30px;
 }
-/* .greenhead{
-  position: absolute;
-  z-index: 100;
-  top: 10px;
-  width: 741px;
-  right: 18.9%;
-} */
 .Hero-items {
   display: flex;
   justify-content: space-between;
 }
-/* .Description-section{
-    position: absolute;
-    z-index: 1;
-    bottom: 26%;
-    right: 7%;
-}
-.Description {
-  padding-bottom: 10px;
-  color: #565a60 !important;
-  opacity: 1;
-  font-size: 1em;
-
-}
-.Description-p {
-  width: 300px;
-  color: #565a60 !important;
-  opacity: 0.5;
-  font-size: 0.7em;
-} */
-/* .my-atropos {
-  width: 320px;
-  height: 160px;
-
-} */
 .hero-sec{
   position: relative;
 }

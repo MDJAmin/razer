@@ -4,7 +4,6 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import razerLogo from "../../assets/razer-1.svg";
 import { Link, useLocation } from "react-router-dom";
 import "./style.css";
-
 export default function Navbar({ totalItems = 0 }) {
   const location = useLocation();
   return (

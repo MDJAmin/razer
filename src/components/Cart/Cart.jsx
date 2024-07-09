@@ -10,7 +10,6 @@ const Cart = ({
   handleRemoveFromCart,
   handleEmptyCart,
 }) => {
-  //   const handleEmptyCart = () => onEmptyCart();
 
   const renderEmptyCart = () => (
     <Typography variant="p" className="No-cart">

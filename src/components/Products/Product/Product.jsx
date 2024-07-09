@@ -9,12 +9,7 @@ import {
 } from "@mui/material";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import "./style.css";
-
-
 export default function index({ product, onAddToCart }) {
-  // console.log(product);
-  // return <div>teast</div>
-
   return (
     <Card className="root">
 

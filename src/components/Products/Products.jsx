@@ -2,14 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Box, Grid, Skeleton } from "@mui/material";
 import Product from "./Product/Product";
 import "./style.css";
-
-// const products = [
-//   { id: 1, name: "SwiftClick X1", price: "$19.99" },
-//   { id: 2, name: "ProMouse 360", price: "$27.49" },
-//   { id: 3, name: "GlideTech MX", price: "$34.99" },
-//   { id: 4, name: "AeroMouse Ultra", price: "$21.95" },
-// ];
-
 export default function Products({ products, onAddToCart }) {
   const [loading, setLoading] = useState(true);
 
