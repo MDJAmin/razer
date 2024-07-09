@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Typography, Button, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
-import "./style.css";
+import "./cart.css";
 import CartItem from "./Cartitem/Item";
-
+import poor from "../../assets/Default_a_poor_man_with_a_Bowl_1.jpg"
 const Cart = ({
   cart,
   handUpdateCartQty,
@@ -13,9 +13,11 @@ const Cart = ({
   //   const handleEmptyCart = () => onEmptyCart();
 
   const renderEmptyCart = () => (
-    <Typography variant="p">
-      You have no items in your shopping cart
-      <Link className="link" to="/"></Link>!
+    <Typography variant="p" className="No-cart">
+      <img className="poor-man" src={poor} alt="" />
+      You have nothing in you cart ! <br />
+      الاین سنتز هم حال نداشتم بدم 
+      <Link className="link" to="/"></Link>
     </Typography>
   );
 
